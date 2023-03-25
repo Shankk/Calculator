@@ -57,7 +57,7 @@ body {
     flex-wrap: wrap;
 }
 
-.calculator >.keypad >.key {
+.calculator >.keypad >.special, .sign, .number {
     color: white;
     font-size: 48px;
     border: 2px solid rgb(0, 0, 65);
@@ -68,33 +68,41 @@ body {
     flex: 1 1 auto;
 }
 
-.calculator >.keypad >#special {
+.calculator >.keypad >#clear,
+.calculator >.keypad >#switch {
     background-color: darkblue;
 }
 
-.calculator >.keypad >#special:hover {
+.calculator >.keypad >#clear:hover,
+.calculator >.keypad >#switch:hover {
     transform: scale(1.1);
     color: cyan;
     border-color: cyan;
     box-shadow: 0 0 1rem cyan;
 }
 
-.calculator >.keypad >#sign {
+.calculator >.keypad >#add, #subtract,
+#multiply, #divide, #remainder, #equal {
     background-color: darkorange;
 }
 
-.calculator >.keypad >#sign:hover {
+.calculator >.keypad >#add:hover, #subtract:hover, #multiply:hover,
+#divide:hover, #remainder:hover, #equal:hover {
     transform: scale(1.1);
     color: yellow;
     border-color: yellow;
     box-shadow: 0 0 1rem yellow;
 }
 
-.calculator >.keypad >#number {
+.calculator >.keypad >#decimal,
+#num0,#num1,#num2,#num3,#num4,
+#num5,#num6,#num7,#num8,#num9 {
     background: darkgreen;
 }
 
-.calculator >.keypad >#number:hover {
+.calculator >.keypad >#decimal:hover,
+#num0:hover,#num1:hover,#num2:hover,#num3:hover,#num4:hover,
+#num5:hover,#num6:hover,#num7:hover,#num8:hover,#num9:hover {
     transform: scale(1.1);
     color: lawngreen;
     border-color: lawngreen;
